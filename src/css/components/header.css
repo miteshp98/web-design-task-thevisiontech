@@ -1,0 +1,33 @@
+@import url('./header/header-center.css');
+@import url('./header/navbar.css');
+
+header {
+  overflow-x: hidden;
+}
+
+.header__announcement-bar {
+  background-color: var(--black);
+  text-align: center;
+  color: white;
+  padding: 5px;
+
+  font-size: 0.8rem;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.header__wrapper {
+  padding: 1rem;
+  background: linear-gradient(
+    to top,
+    var(--soft-pink) 0%,
+    var(--rich-pink) 100%
+  );
+
+  @media screen and (min-width: 1250px) {
+    padding-inline: 5rem;
+  }
+}

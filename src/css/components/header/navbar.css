@@ -1,0 +1,148 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+
+  max-width: 375px;
+  transition: right 0.3s ease-in-out;
+
+  @media (orientation: landscape) {
+    position: absolute;
+    height: max-content;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    background-color: transparent;
+    max-width: 100%;
+  }
+}
+
+.navbar--toggle {
+  right: 0;
+}
+
+.navbar__container {
+  padding: 5rem 2rem;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.navbar__close-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 50px;
+  height: 45px;
+  background-color: var(--rich-pink);
+  border: 1px solid var(--rich-pink);
+  color: var(--white);
+  font-size: 1.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--rich-pink);
+  }
+
+  &:focus-visible {
+    outline: 1px solid black;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.search-bar-form {
+  position: relative;
+
+  > img {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    filter: invert(100);
+    opacity: 0.4;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.navbar__search-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.242);
+  border-radius: 5px;
+  padding: 1rem 3rem 1rem 1rem;
+}
+
+.navbar__list {
+  width: 100%;
+  min-height: 26px;
+  margin-top: 2rem;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    gap: 2rem;
+  }
+}
+
+.navbar__link {
+  display: block;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  text-decoration: none;
+  padding-block: 1rem;
+  color: gray;
+
+  &:hover,
+  &:focus {
+    color: var(--rich-pink);
+    border-color: var(--rich-pink);
+    outline: none;
+
+    @media screen and (min-width: 768px) {
+      color: var(--white);
+      border-bottom: 2px solid var(--white);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    color: var(--white);
+    border: none;
+  }
+}
+
+.navbar__link--active {
+  color: var(--rich-pink);
+  border-color: var(--rich-pink);
+
+  @media screen and (min-width: 768px) {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+  }
+}
