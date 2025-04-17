@@ -1,4 +1,4 @@
-function toggleNav() {
+export function toggleNav() {
   const body = document.querySelector('body');
   const overlay = body.querySelector('.bg-overlay');
 
@@ -10,13 +10,13 @@ function toggleNav() {
     if (navOpen) {
       navbar.classList.add('navbar--toggle');
       overlay.classList.add('bg-overlay--active');
-      overlay.removeAttribute('hidden');
+      body.style.overflow = 'hidden';
     }
 
     if (navClose) {
       navbar.classList.remove('navbar--toggle');
       overlay.classList.remove('bg-overlay--active');
-      overlay.setAttribute('hidden', true);
+      body.style.overflow = 'auto';
     }
   });
 }
