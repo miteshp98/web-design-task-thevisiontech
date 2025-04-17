@@ -49,7 +49,7 @@
 }
 .container {
   position: relative;
-  padding: 16rem 1rem 20rem;
+  padding: 16rem 1.3rem 20rem;
 }
 
 /* Hero Details Styles */
@@ -57,10 +57,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.3rem;
+  gap: 2rem;
 
   @media screen and (min-width: 1250px) {
-    padding-inline: 5rem;
+    padding-inline: 7rem;
   }
 }
 
@@ -146,10 +146,10 @@
 /* category Section Styles */
 
 .category {
-  padding: 4rem 1rem;
+  padding: 6rem 1.3rem;
 
   @media screen and (min-width: 1250px) {
-    padding: 6rem 5rem;
+    padding: 6rem 7rem;
   }
 }
 
@@ -240,7 +240,7 @@
 .products__container {
   position: relative;
   @media screen and (min-width: 1250px) {
-    padding-inline: 5rem;
+    padding-inline: 7rem;
   }
 }
 
@@ -254,24 +254,6 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 1rem;
   }
-}
-
-.section__title-wrap {
-  position: relative;
-  > img {
-    max-width: clamp(3rem, 6vw, 5.5rem);
-    left: 40%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-.section__title {
-  color: var(--rich-pink);
-  font-family: var(--font-dai-banna);
-  font-size: clamp(2rem, 3vw, 3rem);
-  font-weight: 400;
 }
 
 .products__carousel-controller {
@@ -416,7 +398,7 @@
 
 .view__all-products,
 .shop-body-care-btn {
-  margin: 3rem auto;
+  margin: 3rem auto 2rem;
   max-width: 200px;
   height: 50px;
   border-radius: 10px;
@@ -448,7 +430,11 @@
 /* authenticity-section Styles */
 
 .authenticity-section {
-  padding: 2rem 1rem;
+  padding: 2rem 1.3rem 4rem;
+
+  @media screen and (min-width: 768px) {
+    padding-block: 4rem;
+  }
 
   @media screen and (min-width: 1250px) {
     padding-inline: 7rem;
@@ -471,7 +457,11 @@
 .authenticity-section__details {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
+
+  @media screen and (min-width: 768px) {
+    gap: 3rem;
+  }
 }
 
 .authenticity-section__title {
@@ -526,4 +516,187 @@
   z-index: -1;
 
   transition: transform 0.4s ease-in-out;
+}
+
+/* image-banner__section Styles */
+
+.image-banner__section {
+  background: url('../../../assets/images/sheabutter4-9ba4a517-1920w.png')
+    no-repeat;
+  background-position: center center;
+
+  padding: 6rem 2rem;
+
+  position: relative;
+}
+
+.image-banner__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+  gap: 2rem;
+
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.image-banner__title {
+  font-family: var(--font-dai-banna);
+  font-weight: 400;
+
+  font-size: 2.5rem;
+}
+
+.image-banner-desc {
+  max-width: 545px;
+}
+
+.shop-now__link {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--white);
+  color: var(--rich-pink);
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--rich-pink);
+    color: var(--white);
+  }
+
+  &:focus {
+    outline-offset: 3px;
+    outline: 3px solid var(--white);
+  }
+}
+
+/* image-banner__section Styles */
+
+.natural-ingredients__section {
+  padding: 6rem 1.3rem 2rem;
+
+  background: url('../../../assets/images/Rightleaf.png') no-repeat;
+  background-position: top calc(20% + 230px) right;
+  background-size: 150px;
+
+  @media screen and (min-width: 550px) {
+    background-position: top calc(50% - 70px) right;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-position: top calc(50% + 70px) right;
+    background-size: 200px;
+  }
+
+  @media screen and (min-width: 900px) {
+    padding-bottom: 5rem;
+  }
+
+  @media screen and (min-width: 1250px) {
+    padding-inline: 7rem;
+  }
+}
+
+.natural-ingredients__container {
+  @media screen and (min-width: 900px) {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+}
+
+.natural-ingredients__image {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+
+  > img {
+    border-radius: 15px;
+    object-fit: cover;
+    @media screen and (min-width: 900px) {
+      min-height: 600px;
+    }
+  }
+}
+
+.natural-ingredients__content {
+  margin-block: 3rem;
+  width: 100%;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.natural-ingredients__title-wrap {
+  line-height: 35px;
+}
+
+.natural-ingredients__list {
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+
+  @media screen and (min-width: 990px) {
+    margin-top: 2rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 1rem;
+  }
+}
+
+.natural-ingredients__items {
+  margin-block: 1rem;
+  padding-block: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  > img {
+    max-width: 70px;
+
+    @media screen and (min-width: 990px) {
+      max-width: 60px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 990px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.natural-ingredients__name {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.natural-ingredients__desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }

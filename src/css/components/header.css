@@ -28,6 +28,6 @@ header {
   );
 
   @media screen and (min-width: 1250px) {
-    padding-inline: 5rem;
+    padding-inline: 7rem;
   }
 }
