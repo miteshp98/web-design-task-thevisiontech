@@ -10,5 +10,8 @@
   "devDependencies": {
     "parcel": "^2.14.0",
     "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
