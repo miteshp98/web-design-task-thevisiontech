@@ -84,3 +84,14 @@
     display: flex;
   }
 }
+
+.header__action-btn--user,
+.header__action-btn--cart,
+.header__action-btn--search {
+  > img {
+    width: 100%;
+    object-fit: contain;
+
+    max-width: 25px;
+  }
+}
