@@ -60,7 +60,8 @@
   gap: 2rem;
 
   @media screen and (min-width: 1250px) {
-    padding-inline: 7rem;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -147,10 +148,6 @@
 
 .category {
   padding: 6rem 1.3rem;
-
-  @media screen and (min-width: 1250px) {
-    padding: 6rem 7rem;
-  }
 }
 
 .category__container {
@@ -162,6 +159,11 @@
 
   @media screen and (min-width: 900px) {
     flex-direction: row;
+  }
+
+  @media screen and (min-width: 1250px) {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -239,8 +241,10 @@
 
 .products__container {
   position: relative;
+
   @media screen and (min-width: 1250px) {
-    padding-inline: 7rem;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -435,10 +439,6 @@
   @media screen and (min-width: 768px) {
     padding-block: 4rem;
   }
-
-  @media screen and (min-width: 1250px) {
-    padding-inline: 7rem;
-  }
 }
 
 .authenticity-section__container {
@@ -451,6 +451,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1250px) {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -498,7 +503,7 @@
 
 .authenticity-section__img {
   width: 100%;
-  max-width: 450px;
+  max-width: 430px;
   margin: 0 auto;
 
   clip-path: polygon(70% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
@@ -512,7 +517,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 600px;
+  max-width: 530px;
   z-index: -1;
 
   transition: transform 0.4s ease-in-out;
@@ -603,10 +608,6 @@
   @media screen and (min-width: 900px) {
     padding-bottom: 5rem;
   }
-
-  @media screen and (min-width: 1250px) {
-    padding-inline: 7rem;
-  }
 }
 
 .natural-ingredients__container {
@@ -615,6 +616,11 @@
     align-items: center;
     gap: 2rem;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1250px) {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 

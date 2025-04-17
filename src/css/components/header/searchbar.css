@@ -1,0 +1,16 @@
+.search-bar-form {
+  position: relative;
+
+  > img {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    filter: invert(100);
+    opacity: 0.4;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

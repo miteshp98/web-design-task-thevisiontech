@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   right: -100%;
+  z-index: 10;
 
   background-color: var(--white);
   width: 100%;
@@ -64,22 +65,7 @@
   }
 }
 
-.search-bar-form {
-  position: relative;
 
-  > img {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    filter: invert(100);
-    opacity: 0.4;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
 
 .navbar__search-input {
   width: 100%;

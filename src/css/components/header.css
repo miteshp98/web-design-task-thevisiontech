@@ -1,8 +1,15 @@
 @import url('./header/header-center.css');
 @import url('./header/navbar.css');
+@import url('./header/searchbar.css');
 
 header {
   overflow-x: hidden;
+
+  background: linear-gradient(
+    to top,
+    var(--soft-pink) 0%,
+    var(--rich-pink) 100%
+  );
 }
 
 .header__announcement-bar {
@@ -21,13 +28,9 @@ header {
 
 .header__wrapper {
   padding: 1rem;
-  background: linear-gradient(
-    to top,
-    var(--soft-pink) 0%,
-    var(--rich-pink) 100%
-  );
 
   @media screen and (min-width: 1250px) {
-    padding-inline: 7rem;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }

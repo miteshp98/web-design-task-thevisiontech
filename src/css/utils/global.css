@@ -1,0 +1,17 @@
+.section__title-wrap {
+  position: relative;
+  > img {
+    max-width: clamp(5rem, 6vw, 5.5rem);
+    left: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.section__title {
+  color: var(--rich-pink);
+  font-family: var(--font-dai-banna);
+  font-size: clamp(2.3rem, 3vw, 3rem);
+  font-weight: 400;
+}
