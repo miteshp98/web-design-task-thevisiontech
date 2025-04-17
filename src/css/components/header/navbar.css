@@ -47,9 +47,14 @@
   background-color: var(--rich-pink);
   border: 1px solid var(--rich-pink);
   color: var(--white);
+
   font-size: 1.75rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: transparent;
@@ -64,8 +69,6 @@
     display: none;
   }
 }
-
-
 
 .navbar__search-input {
   width: 100%;

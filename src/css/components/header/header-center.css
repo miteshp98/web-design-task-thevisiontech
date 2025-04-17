@@ -92,9 +92,7 @@
 .header__action-btn--search {
   > img {
     flex-shrink: 0;
-    width: 100%;
+    width: 25px;
     object-fit: contain;
-
-    max-width: 25px;
   }
 }
