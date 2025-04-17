@@ -3,12 +3,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* 2. Remove default margin */
-* {
-  margin: 0;
-}
+
 
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
