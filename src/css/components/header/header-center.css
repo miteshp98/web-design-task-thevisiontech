@@ -48,6 +48,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  flex-shrink: 0;
 
   &:hover {
     border: 1px solid white;
