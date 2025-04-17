@@ -36,6 +36,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+
+  flex-shrink: 0;
 }
 
 .header__action-btn {
@@ -89,6 +91,7 @@
 .header__action-btn--cart,
 .header__action-btn--search {
   > img {
+    flex-shrink: 0;
     width: 100%;
     object-fit: contain;
 
